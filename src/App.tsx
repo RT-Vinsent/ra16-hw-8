@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import List from './components/task1/List/List';
 
 /**
  * Главный компонент приложения
@@ -16,7 +17,7 @@ function App(): JSX.Element {
       </header>
       
       {/* Компонент задачи №1 */}
-      {/* < /> */}
+      <List />
 
       {/* Компонент задачи №2 */}
       {/* < /> */}

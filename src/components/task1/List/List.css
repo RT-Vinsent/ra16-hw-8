@@ -1,0 +1,39 @@
+.list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
+  gap: 20px;
+}
+
+.user-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 200px;
+
+  border-radius: 6px;
+}
+
+.user-list li {
+  padding: 8px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background: #ffffff;
+}
+
+.user-list li:nth-child(n+2) {
+  border-top: none;
+} 
+
+.user-list li.selected {
+  background-color: blue;
+  color: white;
+}
+
+@media (min-width: 600px) {
+  .list-container {
+    justify-content: space-between;
+    width: 520px;
+  }
+}
