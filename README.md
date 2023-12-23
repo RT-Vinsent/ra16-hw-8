@@ -19,7 +19,7 @@ Hooks & Context API». Все задачи
 Необходимо выполнить и предоставить на проверку следующие задачи:
 
 <details>
-<summary>1. useEffect</summary>
+<summary>1. useEffect — «Список и детали»</summary>
 
 ## Список и детали
 

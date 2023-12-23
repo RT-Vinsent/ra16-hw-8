@@ -9,18 +9,6 @@
   border-radius: 6px;
 }
 
-.details-loading {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-2em, -50%);
-  display: flex;
-
-  font-size: 1.5em;
-  animation: loadingAnimation 1s ease-in-out infinite; /* Применение анимации */
-  overflow: hidden;
-}
-
 .user-details {
   border: 1px solid #d8d8d8;
   /* padding: 10px; */
@@ -62,8 +50,36 @@
   border-top: 1px solid #d8d8d8;
 }
 
-@keyframes loadingAnimation {
-  0% { width: 3.4em; }
-  50% { width: 4em; }
-  100% { width: 4.5em; }
+.loading-animation {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-2.5em, -50%);
+
+  /* margin-top: calc(50% + 1em);
+  margin-left: calc(50% - 2.5em); */
+
+  width: 2em;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.loading-animation::after {
+  content: "Загрузка"; /* Начальный текст */
+  animation: loading 1s infinite; /* Применяем анимацию с бесконечным повторением */
+}
+
+@keyframes loading {
+  0% {
+    content: "Загрузка";
+  }
+  25% {
+    content: "Загрузка.";
+  }
+  50% {
+    content: "Загрузка..";
+  }
+  75% {
+    content: "Загрузка...";
+  }
 }

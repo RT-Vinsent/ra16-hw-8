@@ -43,19 +43,22 @@ export const List: React.FC = () => {
 
   // Рендеринг списка пользователей.
   return (
-    <div className="list-container">
-      <ul className="user-list">
-        {users.map((user: User) => (
-          <li
-            key={user.id}
-            onClick={() => setSelectedUserId(user.id)} // Обработчик клика по элементу списка, обновляющий выбранного пользователя.
-            className={selectedUserId === user.id ? 'selected' : ''} // Применение класса 'selected' для выделения выбранного пользователя.
-          >
-            {user.name}
-          </li>
-        ))}
-      </ul>
-      {selectedUserId && <Details userId={selectedUserId} />}
+    <div className='container'>
+      <h2>«Список и детали»</h2>
+      <div className="list-container">
+        <ul className="user-list">
+          {users.map((user: User) => (
+            <li
+              key={user.id}
+              onClick={() => setSelectedUserId(user.id)} // Обработчик клика по элементу списка, обновляющий выбранного пользователя.
+              className={selectedUserId === user.id ? 'selected' : ''} // Применение класса 'selected' для выделения выбранного пользователя.
+            >
+              {user.name}
+            </li>
+          ))}
+        </ul>
+        {selectedUserId && <Details userId={selectedUserId} />}
+      </div>
     </div>
   );
 };
