@@ -1,0 +1,47 @@
+/* Profile.css */
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 15px;
+}
+
+.authentication-logo {
+  padding: 15px;
+
+  font-size: 1.4em;
+}
+
+.profile-greeting {
+  /* margin-right: 20px; */
+}
+
+.profile-image-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-image {
+  width: 100%;
+  height: auto;
+}
+
+.logout-button {
+  border: 1px solid #ff4b4b;
+  background-color: transparent;
+  color: #ff4b4b;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+
+  min-width: 65px;
+}
+
+.logout-button:hover {
+  background-color: #ff4b4b;
+  color: white;
+}

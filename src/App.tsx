@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import List from './components/task1/List/List';
 import JsonFetch from './components/task2/JsonFetch/JsonFetch';
+import AuthenticationComponent from './components/task3/AuthenticationComponent/AuthenticationComponent';
 
 /**
  * Главный компонент приложения
@@ -24,7 +25,7 @@ function App(): JSX.Element {
       <JsonFetch />
 
       {/* Компонент задачи №3 */}
-      {/* < /> */}
+      <AuthenticationComponent />
       
       {/* Просто подвал */}
       <footer className='footer'><p>Просто подвал</p></footer>
