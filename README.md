@@ -5,7 +5,7 @@
 
 ### Ссылкка на [github-pages](https://rt-vinsent.github.io/ra16-hw-8/)
 
-### Ссылкка на [backend репозиторий](https://github.com/RT-Vinsent/ra16-hw-8)
+### Ссылкка на [backend репозиторий](https://github.com/RT-Vinsent/ra16-hw-8-backend)
 
 ---
 
