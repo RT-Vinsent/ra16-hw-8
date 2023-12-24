@@ -42,7 +42,7 @@ export const Details: React.FC<DetailsProps> = ({ userId }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`1https://raw.githubusercontent.com/netology-code/ra16-homeworks/master/hooks-context/use-effect/data/${userId}.json`);
+        const response = await fetch(`https://raw.githubusercontent.com/netology-code/ra16-homeworks/master/hooks-context/use-effect/data/${userId}.json`);
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }

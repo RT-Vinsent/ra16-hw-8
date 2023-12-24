@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import List from './components/task1/List/List';
+import JsonFetch from './components/task2/JsonFetch/JsonFetch';
 
 /**
  * Главный компонент приложения
@@ -20,7 +21,7 @@ function App(): JSX.Element {
       <List />
 
       {/* Компонент задачи №2 */}
-      {/* < /> */}
+      <JsonFetch />
 
       {/* Компонент задачи №3 */}
       {/* < /> */}
