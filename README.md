@@ -5,6 +5,8 @@
 
 ### Ссылкка на [github-pages](https://rt-vinsent.github.io/ra16-hw-8/)
 
+### Ссылкка на [backend репозиторий](https://github.com/RT-Vinsent/ra16-hw-8)
+
 ---
 
 [![Build status](https://ci.appveyor.com/api/projects/status/uiiup5wi6792ejp2?svg=true)](https://ci.appveyor.com/project/RT-Vinsent/ra16-hw-8)
@@ -44,8 +46,6 @@ Hooks & Context API». Все задачи
 1. Вся загрузка должна происходить через хук `useEffect`. Подумайте, как организовать единоразовую загрузку и загрузку при каждом изменении `props.info.id`.
 1. Обратите внимание, загрузка деталей должна происходить только при изменении `props.info.id`, а не при каждом рендере. То есть если на одного и того же пользователя кликнуть дважды, то загрузка произойдёт только в первый раз.
 
-
-
 </details>
 
 <details>
@@ -71,8 +71,6 @@ const [data, loading, error] = useJsonFetch(url, opts);
 * GET http://localhost:7070/loading — индикатор загрузки.
 
 Backend возьмите из каталога `backend`.
-
-
 
 </details>
 
@@ -109,7 +107,6 @@ Authorization: Bearer <ваш_токен>
 1. Профиль и токен должны храниться в localStorage/sessionStorage. При перезагрузке страницы должна также загружаться лента новостей, если мы аутентифицированы.
 1. Должна быть обработка ошибок, если получена ошибка 401, то нужно разлогинивать пользователя — удалять всё из localStorage/sessionStorage.
 1. Не используйте React Router, просто подменяйте компоненты в зависимости от текущего состояния аутентификации.
-
 
 </details>
 
