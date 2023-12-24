@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import List from './components/task1/List/List';
 import JsonFetch from './components/task2/JsonFetch/JsonFetch';
